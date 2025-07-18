@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const CountDownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
-    if (difference <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    if (difference <= 0) return null;
 
     const timeLeft = {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -28,14 +28,14 @@ const CountDownTimer = ({ targetDate }) => {
 
   if (!timeLeft) {
     return (
-      <p className="text-center text-lg font-semibold text-[#556B2F]">
+      <p className="text-center text-lg font-semibold">
         The event has started!
       </p>
     );
   }
 
   return (
-    <div className="flex justify-center gap-4 mt-24 text-[#556B2F] text-xl font-semibold">
+    <div className="flex justify-center gap-4">
       <div>
         <span>{timeLeft.days}</span> days
       </div>
