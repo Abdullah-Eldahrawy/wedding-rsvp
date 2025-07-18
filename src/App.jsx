@@ -26,24 +26,24 @@ function App() {
       title: "Welcome & Arrival",
       description: "You will be picked up from your accommodation",
       subtitle: "Welcome Champagne",
-      leftIcon: <Music className="w-16 h-16" />,
-      rightIcon: <Gift className="w-12 h-12" />,
+      leftIcon: <img src="/dress.png" className="w-64 h-48"/>,
+      rightIcon: <img src="/shoes.png" className="w-64 h-48"/>,
     },
     {
       time: "4pm",
       title: "Ceremony",
       description: "The sacred union begins",
       subtitle: "Exchange of Vows",
-      leftIcon: <Heart className="w-14 h-14" />,
-      rightIcon: <Flower className="w-16 h-16" />,
+      leftIcon: <img src="/cake.png" className="w-48 h-48"/>,
+      rightIcon: <img src="/wine.png" className="w-32 h-48"/>,
     },
     {
       time: "4:30pm",
       title: "Cocktail Hour & Canapés",
       description: "Mingle with family and friends",
       subtitle: "Photography Session",
-      leftIcon: <Camera className="w-16 h-16" />,
-      rightIcon: <Wine className="w-14 h-14" />,
+      leftIcon: <img src="/ring.png" className="w-32 h-22" />,
+      rightIcon: <img src="/suit.png" className="w-32 h-48"/>,
     },
     {
       time: "5:30pm",
@@ -71,8 +71,14 @@ function App() {
             className="text-xl sm:text-4xl lg:text-5xl font-serif mb-4"
             style={{ color: "#265026" }}
           >
-            <CountDownTimer targetDate={targetDate} />
+            #JwairayaHobAbdullah
           </h1>
+          <h2
+            className="text-xl sm:text-2xl font-serif mb-4"
+            style={{ color: "#265026" }}
+          >
+            <CountDownTimer targetDate={targetDate} />
+          </h2>
           <div
             className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
             style={{ color: "#507550" }}
@@ -82,12 +88,6 @@ function App() {
             </span>
             <span className="hover:opacity-75 cursor-pointer transition-opacity">
               Schedule
-            </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity">
-              Dress Code
-            </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity">
-              Information
             </span>
             <span className="hover:opacity-75 cursor-pointer transition-opacity">
               RSVP

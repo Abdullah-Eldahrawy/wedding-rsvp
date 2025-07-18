@@ -13,7 +13,7 @@ function WeddingCardItem({ details, index }) {
           top: `${-20 + (index % 4) * 20}px`,
         }}
       >
-        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16">
+        <div>
           {details.leftIcon}
         </div>
       </div>
@@ -52,7 +52,7 @@ function WeddingCardItem({ details, index }) {
           top: `${-10 + (index % 3) * 25}px`,
         }}
       >
-        <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
+        <div>
           {details.rightIcon}
         </div>
       </div>
