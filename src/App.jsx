@@ -26,16 +26,16 @@ function App() {
       title: "Welcome & Arrival",
       description: "You will be picked up from your accommodation",
       subtitle: "Welcome Champagne",
-      leftIcon: <img src="/dress.png" className="w-64 h-48"/>,
-      rightIcon: <img src="/shoes.png" className="w-64 h-48"/>,
+      leftIcon: <img src="/dress.png" className="w-64 h-48" />,
+      rightIcon: <img src="/shoes.png" className="w-64 h-48" />,
     },
     {
       time: "4pm",
       title: "Ceremony",
       description: "The sacred union begins",
       subtitle: "Exchange of Vows",
-      leftIcon: <img src="/cake.png" className="w-48 h-48"/>,
-      rightIcon: <img src="/wine.png" className="w-32 h-48"/>,
+      leftIcon: <img src="/cake.png" className="w-48 h-48" />,
+      rightIcon: <img src="/wine.png" className="w-32 h-48" />,
     },
     {
       time: "4:30pm",
@@ -43,7 +43,7 @@ function App() {
       description: "Mingle with family and friends",
       subtitle: "Photography Session",
       leftIcon: <img src="/ring.png" className="w-32 h-22" />,
-      rightIcon: <img src="/suit.png" className="w-32 h-48"/>,
+      rightIcon: <img src="/suit.png" className="w-32 h-48" />,
     },
     {
       time: "5:30pm",
@@ -68,36 +68,37 @@ function App() {
         {/* Header */}
         <header className="text-center mb-8 sm:mb-12 pt-4 sm:pt-8">
           <h1
-            className="text-xl sm:text-4xl lg:text-5xl font-serif mb-4"
-            style={{ color: "#265026" }}
+            className="text-xl sm:text-4xl lg:text-5xl font-cinzel mb-4"
+            style={{ color: "#839d4d" }}
           >
-            #JwairayaHobAbdullah
+            #jwairayahobabdullah
           </h1>
           <h2
-            className="text-xl sm:text-2xl font-serif mb-4"
-            style={{ color: "#265026" }}
+            className="text-lg sm:text-2xl font-cinzel mb-4"
+            style={{ color: "#821d30" }}
           >
             <CountDownTimer targetDate={targetDate} />
           </h2>
           <div
-            className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
-            style={{ color: "#507550" }}
+            className="flex flex-wrap justify-center gap-4 font-bold font-cinzel sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
+            style={{ color: "#a1b67e" }}
           >
             <span className="hover:opacity-75 cursor-pointer transition-opacity">
-              Home
+              home
             </span>
             <span className="hover:opacity-75 cursor-pointer transition-opacity">
-              Schedule
+              rsvp
             </span>
             <span className="hover:opacity-75 cursor-pointer transition-opacity">
-              RSVP
+              dresscode
             </span>
           </div>
         </header>
 
         {/* Friday Section */}
-        <main className="mb-12 sm:mb-16">
-          <div className="text-center mb-6 sm:mb-8">
+        <main className="mb-12 sm:mb-16 flex flex-col items-center">
+          <img src="/wedding-invite.jpeg" alt="wedding invite" />
+          {/* <div className="text-center mb-6 sm:mb-8">
             <h2
               className="text-2xl sm:text-3xl font-serif mb-2"
               style={{ color: "#265026" }}
@@ -110,11 +111,11 @@ function App() {
             ></div>
           </div>
 
-          <WeddingCardItemsList events={events} />
+          <WeddingCardItemsList events={events} /> */}
         </main>
 
         {/* Saturday Section */}
-        <footer className="mt-16 sm:mt-20">
+        {/* <footer className="mt-16 sm:mt-20">
           <div className="text-center mb-6 sm:mb-8">
             <h2
               className="text-2xl sm:text-3xl font-serif mb-2"
@@ -126,19 +127,19 @@ function App() {
               className="w-16 sm:w-24 h-0.5 mx-auto"
               style={{ backgroundColor: "#c9e894" }}
             ></div>
-          </div>
+          </div> */}
 
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center"> */}
             {/* Left illustration - hidden on mobile */}
-            <div
+            {/* <div
               className="opacity-60 hidden sm:block mr-8"
               style={{ color: "#ffd6e7" }}
             >
               <Utensils className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16" />
-            </div>
+            </div> */}
 
             {/* Center content */}
-            <div className="text-center bg-white p-6 sm:p-8 max-w-md sm:max-w-lg">
+            {/* <div className="text-center bg-white p-6 sm:p-8 max-w-md sm:max-w-lg">
               <div className="flex items-center justify-center mb-4">
                 <MapPin
                   className="w-6 h-6 sm:w-8 sm:h-8 mr-3"
@@ -163,17 +164,17 @@ function App() {
               >
                 Sharing stories from the night before
               </p>
-            </div>
+            </div> */}
 
             {/* Right illustration - hidden on mobile */}
-            <div
+            {/* <div
               className="opacity-60 hidden sm:block ml-8"
               style={{ color: "#c9e894" }}
             >
               <Wine className="w-12 h-12 sm:w-14 sm:h-14" />
             </div>
           </div>
-        </footer>
+        </footer> */}
 
         {/* Additional decorative elements scattered around - hidden on mobile */}
         <div
