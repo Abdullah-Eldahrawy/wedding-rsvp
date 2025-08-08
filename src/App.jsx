@@ -12,6 +12,8 @@ import {
   Star,
 } from "lucide-react";
 import WeddingCardItemsList from "./components/WeddingCardItemsList";
+import { useState } from "react";
+import Rsvp from "./components/Rsvp";
 
 function App() {
   // const headerList = ["Our Story", "Details", "RSVP"].map((listItem) => (
@@ -62,6 +64,7 @@ function App() {
       rightIcon: <Heart className="w-14 h-14" />,
     },
   ];
+  const [currPage, setCurrPage] = useState("home");
   return (
     <div className="min-h-screen bg-white p-4 sm:p-6 lg:p-8">
       <div className="max-w-6xl mx-auto">
@@ -83,13 +86,13 @@ function App() {
             className="flex flex-wrap justify-center gap-4 font-bold font-cinzel sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
             style={{ color: "#a1b67e" }}
           >
-            <span className="hover:opacity-75 cursor-pointer transition-opacity">
+            <span className="hover:opacity-75 cursor-pointer transition-opacity" onClick={() => setCurrPage("home")}>
               home
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity">
+            <span className="hover:opacity-75 cursor-pointer transition-opacity" onClick={() => setCurrPage("rsvp")}>
               rsvp
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity">
+            <span className="hover:opacity-75 cursor-pointer transition-opacity" onClick={() => setCurrPage("dresscode")}>
               dresscode
             </span>
           </div>
@@ -97,7 +100,7 @@ function App() {
 
         {/* Friday Section */}
         <main className="mb-12 sm:mb-16 flex flex-col items-center">
-          <img src="/wedding-invite.jpeg" alt="wedding invite" />
+          {currPage === "home" ? (<img src="/wedding-invite.png" alt="wedding invite" />) : (<Rsvp />)}
           {/* <div className="text-center mb-6 sm:mb-8">
             <h2
               className="text-2xl sm:text-3xl font-serif mb-2"
