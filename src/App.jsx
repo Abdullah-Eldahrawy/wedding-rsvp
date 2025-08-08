@@ -100,7 +100,8 @@ function App() {
 
         {/* Friday Section */}
         <main className="mb-12 sm:mb-16 flex flex-col items-center">
-          {currPage === "home" ? (<img src="/wedding-invite.png" alt="wedding invite" />) : (<Rsvp />)}
+          <img src="/wedding-invite.png" alt="wedding invite" className={currPage === "home" ? "block" : "hidden"}/> 
+          <Rsvp visibility={currPage === "rsvp" ? "block" : "hidden"}/>
           {/* <div className="text-center mb-6 sm:mb-8">
             <h2
               className="text-2xl sm:text-3xl font-serif mb-2"

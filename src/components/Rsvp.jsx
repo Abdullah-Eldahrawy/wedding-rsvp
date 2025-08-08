@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Rsvp() {
+function Rsvp({visibility}) {
   const [form, setForm] = useState({
     name: "",
     attending: "",
@@ -19,7 +19,7 @@ function Rsvp() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className={`relative w-full ${visibility}`}>
       {/* Background */}
       <img src="/background.png" alt="rsvp" className="w-full" />
 
