@@ -26,26 +26,26 @@ function Rsvp({visibility}) {
       {/* Form Overlay */}
       <form
         onSubmit={handleSubmit}
-        className="absolute top-0 left-0 w-full h-full text-center"
+        className="absolute top-0 left-0 w-full h-full text-center items-center flex flex-col"
       >
-        <h2 className="absolute top-[15%] left-[25%] text-xs font-cinzel font-bold text-[#821d30] tracking-wide sm:text-2xl">
-          A Love Worth Celebrating <br /> And We Want You There
-        </h2>
+        {/* <h2 className="absolute top-[15%] left-[25%] text-xs font-cinzel font-bold text-[#821d30] tracking-wide sm:text-2xl">
+          A LOVE WORTH CELEBRATING <br /> AND WE WANT YOU THERE
+        </h2> */}
 
-        <div className="absolute top-[26%] left-[22%] w-full max-w-[56%] flex flex-col space-y-4">
-          <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Full Name:</label>
+        <div className="absolute top-[30%] max-w-[56%] flex flex-col space-y-4">
+          {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Full Name:</label> */}
           <input
             name="name"
             value={form.name}
             onChange={handleChange}
             placeholder="Your full name"
-            className="w-full px-4 py-2 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
+            className="py-2 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
             required
           />
         </div>
 
-        <div className="absolute top-[45%] left-[20%] w-full max-w-[60%] flex flex-col space-y-4 items-center">
-          <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Will you join us?</label>
+        <div className="absolute top-[50%] w-full max-w-[60%] flex flex-col space-y-4 items-center">
+          {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Will you join us?</label> */}
           <div className="flex flex-col space-y-1 max-w-[70%]">
             <button
               type="button"
@@ -70,8 +70,8 @@ function Rsvp({visibility}) {
           </div>
         </div>
 
-        <div className="absolute top-[76%] left-[22%] w-full max-w-[56%] flex flex-col space-y-1 items-center">
-          <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Phone Number:</label>
+        <div className="absolute top-[80%] w-full max-w-[56%] flex flex-col space-y-1 items-center">
+          {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Phone :</label> */}
           <input
             name="phone"
             value={form.phone}
@@ -84,7 +84,7 @@ function Rsvp({visibility}) {
 
         <button
           type="submit"
-          className="absolute top-[89%] left-[21%] w-full max-w-[57%] text-sm font-cinzel font-bold text-[#821d30]"
+          className="absolute top-[89%] w-full max-w-[57%] text-sm font-cinzel font-bold text-[#821d30]"
         >
           Submit
         </button>
