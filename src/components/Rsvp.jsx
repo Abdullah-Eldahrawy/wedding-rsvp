@@ -38,8 +38,8 @@ function Rsvp({visibility}) {
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder="Your full name"
-            className="py-2 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
+            placeholder="........"
+            className="py-0.5$ border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
             required
           />
         </div>
@@ -76,7 +76,7 @@ function Rsvp({visibility}) {
             name="phone"
             value={form.phone}
             onChange={handleChange}
-            placeholder="0100260.... "
+            placeholder="........"
             className="w-full max-w-[70%] py-0.5 px-4 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
             required
           />
