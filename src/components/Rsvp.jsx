@@ -32,14 +32,14 @@ function Rsvp({visibility}) {
           A LOVE WORTH CELEBRATING <br /> AND WE WANT YOU THERE
         </h2> */}
 
-        <div className="absolute top-[30%] max-w-[56%] flex flex-col space-y-4">
+        <div className="absolute top-[30.5%] max-w-[56%] flex flex-col space-y-4">
           {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Full Name:</label> */}
           <input
             name="name"
             value={form.name}
             onChange={handleChange}
             placeholder="........"
-            className="py-0.5 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
+            className="py-2 px-4 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
             required
           />
         </div>
