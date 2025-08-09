@@ -39,7 +39,7 @@ function Rsvp({visibility}) {
             value={form.name}
             onChange={handleChange}
             placeholder="........"
-            className="py-0.5$ border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
+            className="py-0.5 border-2 border-[#839d4d] rounded-lg text-center text-xs font-cinzel text-[#dba6b1] font-bold"
             required
           />
         </div>
