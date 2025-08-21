@@ -21,7 +21,7 @@ function App() {
   //     {listItem}
   //   </li>
   // ));
-  const targetDate = new Date("2025-09-06T00:00:00");
+  const targetDate = new Date("2025-09-06T16:00:00");
   const events = [
     {
       time: "3pm",
@@ -86,14 +86,17 @@ function App() {
             className="flex flex-wrap justify-center gap-4 font-bold font-cinzel sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
             style={{ color: "#a1b67e" }}
           >
-            <span className="hover:opacity-75 cursor-pointer transition-opacity" onClick={() => setCurrPage("home")}>
+            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("home")}>
               home
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity" onClick={() => setCurrPage("rsvp")}>
+            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("rsvp")}>
               rsvp
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity" onClick={() => setCurrPage("dresscode")}>
+            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("dresscode")}>
               dresscode
+            </span>
+            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("location")}>
+              location
             </span>
           </div>
         </header>
@@ -101,6 +104,7 @@ function App() {
         {/* Friday Section */}
         <main className="mb-12 sm:mb-16 flex flex-col items-center">
           <img src="/wedding-invite.png" alt="wedding invite" className={currPage === "home" ? "block" : "hidden"}/> 
+          <img src="/dress-code.jpeg" alt="dress code" className={currPage === "dresscode" ? "block" : "hidden"}/> 
           <Rsvp visibility={currPage === "rsvp" ? "block" : "hidden"}/>
           {/* <div className="text-center mb-6 sm:mb-8">
             <h2

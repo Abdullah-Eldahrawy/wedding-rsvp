@@ -46,10 +46,10 @@ function Rsvp({visibility}) {
 
         <div className="absolute top-[50%] w-full max-w-[60%] flex flex-col space-y-4 items-center">
           {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Will you join us?</label> */}
-          <div className="flex flex-col space-y-1 max-w-[70%]">
+          <div className="flex flex-col space-y-2 max-w-[70%]">
             <button
               type="button"
-              className={`text-[#821d30] text-xs font-cinzel font-semibold rounded-md p-1 ${
+              className={`text-[#821d30] text-xs font-cinzel font-semibold rounded-lg p-1 border-2 border-solid border-[#821d30] ${
                 form.attending === "yes"
                   && "bg-[#d5efab]"
               }`}
@@ -59,7 +59,7 @@ function Rsvp({visibility}) {
             </button>
             <button
               type="button"
-              className={`text-[#821d30] text-xs font-cinzel font-semibold rounded-md p-1 ${
+              className={`text-[#821d30] text-xs font-cinzel font-semibold rounded-lg p-1 border-2 border-solid border-[#821d30] ${
                 form.attending === "no"
                   && "bg-[#d5efab]"
               }`}
