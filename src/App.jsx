@@ -106,6 +106,7 @@ function App() {
           <img src="/wedding-invite.png" alt="wedding invite" className={currPage === "home" ? "block" : "hidden"}/> 
           <img src="/dress-code.jpeg" alt="dress code" className={currPage === "dresscode" ? "block" : "hidden"}/> 
           <Rsvp visibility={currPage === "rsvp" ? "block" : "hidden"}/>
+          <a href="https://maps.app.goo.gl/nWhEJtbg8McvZZ8j9" className={`outline-solid rounded-lg p-2 ${currPage === "location" ? "block" : "hidden"}`}>get direction</a>
         </main>
       </div>
     </div>
