@@ -46,7 +46,7 @@ function Rsvp({visibility}) {
 
         <div className="absolute top-[50%] w-full max-w-[60%] flex flex-col space-y-4 items-center">
           {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Will you join us?</label> */}
-          <div className="flex flex-col space-y-2 max-w-[70%]">
+          <div className="flex flex-col space-y-3 max-w-[70%]">
             <button
               type="button"
               className={`text-[#821d30] text-[10px] font-cinzel font-semibold rounded-lg p-1 outline-solid ${
@@ -84,7 +84,7 @@ function Rsvp({visibility}) {
 
         <button
           type="submit"
-          className="absolute top-[89%] w-full max-w-[57%] text-sm font-cinzel font-bold text-[#821d30]"
+          className="absolute top-[89%] w-full max-w-[57%] text-sm font-cinzel font-bold text-[#821d30] underline"
         >
           Submit
         </button>
