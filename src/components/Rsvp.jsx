@@ -32,7 +32,7 @@ function Rsvp({visibility}) {
           A LOVE WORTH CELEBRATING <br /> AND WE WANT YOU THERE
         </h2> */}
 
-        <div className="absolute top-[30.5%] max-w-[56%] flex flex-col space-y-4">
+        <div className="absolute top-[30.5%] max-w-[50%] flex flex-col space-y-4">
           {/* <label className="text-[#839d4d] text-xs font-cinzel font-semibold">Full Name:</label> */}
           <input
             name="name"
@@ -49,7 +49,7 @@ function Rsvp({visibility}) {
           <div className="flex flex-col space-y-2 max-w-[70%]">
             <button
               type="button"
-              className={`text-[#821d30] text-xs font-cinzel font-semibold rounded-lg p-1 border-2 border-solid border-[#821d30] ${
+              className={`text-[#821d30] text-[10px] font-cinzel font-semibold rounded-lg p-1 outline-solid ${
                 form.attending === "yes"
                   && "bg-[#d5efab]"
               }`}
@@ -59,7 +59,7 @@ function Rsvp({visibility}) {
             </button>
             <button
               type="button"
-              className={`text-[#821d30] text-xs font-cinzel font-semibold rounded-lg p-1 border-2 border-solid border-[#821d30] ${
+              className={`text-[#821d30] text-[10px] font-cinzel font-semibold rounded-lg p-1 outline-solid ${
                 form.attending === "no"
                   && "bg-[#d5efab]"
               }`}

@@ -83,19 +83,19 @@ function App() {
             <CountDownTimer targetDate={targetDate} />
           </h2>
           <div
-            className="flex flex-wrap justify-center gap-4 font-bold font-cinzel sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
+            className="flex flex-wrap justify-center gap-3 font-bold font-cinzel sm:gap-6 lg:gap-8 mb-6 sm:mb-8 text-sm sm:text-base"
             style={{ color: "#a1b67e" }}
           >
-            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("home")}>
+            <span className={`hover:opacity-75 cursor-pointer rounded-lg px-1 transition-opacity outline-solid ${currPage === "home" && "bg-[#f7c9d4]"}`} onClick={() => setCurrPage("home")}>
               home
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("rsvp")}>
+            <span className={`hover:opacity-75 cursor-pointer rounded-lg px-1 transition-opacity outline-solid ${currPage === "rsvp" && "bg-[#f7c9d4]"}`} onClick={() => setCurrPage("rsvp")}>
               rsvp
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("dresscode")}>
+            <span className={`hover:opacity-75 cursor-pointer rounded-lg px-1 transition-opacity outline-solid ${currPage === "dresscode" && "bg-[#f7c9d4]"}`} onClick={() => setCurrPage("dresscode")}>
               dresscode
             </span>
-            <span className="hover:opacity-75 cursor-pointer transition-opacity underline" onClick={() => setCurrPage("location")}>
+            <span className={`hover:opacity-75 cursor-pointer rounded-lg px-1 transition-opacity outline-solid ${currPage === "location" && "bg-[#f7c9d4]"}`} onClick={() => setCurrPage("location")}>
               location
             </span>
           </div>
