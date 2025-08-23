@@ -14,6 +14,7 @@ import {
 import WeddingCardItemsList from "./components/WeddingCardItemsList";
 import { useState } from "react";
 import Rsvp from "./components/Rsvp";
+import Location from "./components/Location";
 
 function App() {
   // const headerList = ["Our Story", "Details", "RSVP"].map((listItem) => (
@@ -104,9 +105,9 @@ function App() {
         {/* Friday Section */}
         <main className="mb-12 sm:mb-16 flex flex-col items-center">
           <img src="/wedding-invite.png" alt="wedding invite" className={currPage === "home" ? "block" : "hidden"}/> 
-          <img src="/dress-code.jpeg" alt="dress code" className={currPage === "dresscode" ? "block" : "hidden"}/> 
+          <img src="/dress-code.png" alt="dress code" className={currPage === "dresscode" ? "block" : "hidden"}/> 
           <Rsvp visibility={currPage === "rsvp" ? "block" : "hidden"}/>
-          <a href="https://maps.app.goo.gl/nWhEJtbg8McvZZ8j9" className={`outline-solid rounded-lg p-2 ${currPage === "location" ? "block" : "hidden"}`}>get direction</a>
+          <Location visibility={currPage === "location" ? "block" : "hidden"}/>
         </main>
       </div>
     </div>
