@@ -4,7 +4,7 @@ import { toast } from "sonner";
 function Rsvp({ visibility }) {
   const [form, setForm] = useState({
     name: "",
-    coming: null, // boolean or null before selection
+    coming: null, 
     phone: "",
   });
 
@@ -21,7 +21,7 @@ function Rsvp({ visibility }) {
       return;
     }
 
-    const fetchPromise = fetch("wedding-rsvp-api-iota.vercel.app/api/rsvps", {
+    const fetchPromise = fetch("https://wedding-rsvp-api-iota.vercel.app/api/rsvps", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
