@@ -35,7 +35,7 @@ function Rsvp({ visibility }) {
       success: (data) => {
         // Reset form values once it succeeds
         setForm({ name: "", coming: null, phone: "" });
-        return `Thanks ${data.name}, your RSVP was submitted 🎉`;
+        return `Thanks ${data?.name?.split(" ")[0] || ""}, your RSVP was submitted 🎉`;
       },
       error: "There was a problem submitting your RSVP",
     });
