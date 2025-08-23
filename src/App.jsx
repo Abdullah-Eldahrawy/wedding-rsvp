@@ -23,7 +23,7 @@ function App() {
             alt="dress code"
             className={currPage === "dresscode" ? "block" : "hidden"}
           />
-          <Rsvp visibility={currPage === "rsvp" ? "block" : "hidden"} />
+          <Rsvp visibility={currPage === "rsvp" ? "block" : "hidden"} setCurrPage={setCurrPage}/>
           <Location visibility={currPage === "location" ? "block" : "hidden"} />
         </main>
       </div>

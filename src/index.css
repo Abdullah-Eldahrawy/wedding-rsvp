@@ -5,3 +5,11 @@
   --font-cinzel: "Cinzel", var(--font-serif);
 }
 
+/* Autofill fix for iOS Safari */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; /* Match your background */
+  -webkit-text-fill-color: #dba6b1 !important; /* Match your text color */
+  transition: background-color 9999s ease-in-out 0s; /* Prevent yellow flash */
+}

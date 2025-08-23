@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 
-function Rsvp({ visibility }) {
+function Rsvp({ visibility, setCurrPage }) {
   const [form, setForm] = useState({
     name: "",
     coming: null, 
@@ -35,6 +35,7 @@ function Rsvp({ visibility }) {
       success: (data) => {
         // Reset form values once it succeeds
         setForm({ name: "", coming: null, phone: "" });
+        setCurrPage("home");
         return `Thanks ${data?.name?.split(" ")[0] || ""}, your RSVP was submitted 🎉`;
       },
       error: "There was a problem submitting your RSVP",
